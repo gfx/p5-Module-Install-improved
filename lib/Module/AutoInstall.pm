@@ -101,7 +101,7 @@ sub import {
     print "*** $class version " . $class->VERSION . "\n";
     print "*** Checking for Perl dependencies...\n";
 
-    my $cwd = Cwd::cwd();
+    my $cwd = Cwd::getcwd();
 
     $Config = [];
 
